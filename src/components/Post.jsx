@@ -3,7 +3,7 @@ import {Navigate, useParams , useNavigate , Routes , Route} from 'react-router-d
 function Post() {
     const status = 200
 
-    // const params = useParams();
+    const params = useParams();
     const navigate = useNavigate()
 
     const onClick=()=>{
@@ -17,7 +17,7 @@ function Post() {
 
   return (
     <div>
-        {/* <h1>{params.name}</h1> */}
+        <h1>{params.name}</h1>
         {/* <p>Post Id : {params.id}</p> */}
         <h1>Posts</h1>
         <button onClick={onClick}>Click</button>
